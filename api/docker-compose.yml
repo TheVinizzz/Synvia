@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  postgresql-docker:
+    image: postgres
+    container_name: postgres-docker
+    environment:
+      POSTGRES_USER: postgress
+      POSTGRES_PASSWORD: postgresspassword
+    ports:
+      - "5432:5432"
+    restart: always
